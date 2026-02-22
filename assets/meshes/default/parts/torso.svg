@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-40 -80 80 120">
+  <path d="M -28 -64 C -38 -28 -34 10 -20 38 L 20 38 C 34 10 38 -28 28 -64 Z" fill="{{tint}}" stroke="#000" stroke-width="3.2" />
+  <path d="M -14 -14 L 14 -14" stroke="#000" stroke-width="2.2" />
+  <circle cx="0" cy="4" r="3.2" fill="#000" />
+</svg>

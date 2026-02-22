@@ -1,0 +1,21 @@
+# Multi-character slapstick demo
+canvas 960 540
+fps 24
+seconds 4.0
+physics mode=off
+camera enabled=true focus=char1 zoom=1.05 depth=true parallax=0.22 shake_on_impact=true
+
+character id=char1 seed "DUO-ALPHA" line 7 limb 10 head 28 jitter 1.0 mode mesh mesh "assets/meshes/default/mesh.json" tint "#2f2f2f"
+character id=char2 seed "DUO-BETA" line 7 limb 10 head 28 jitter 1.05 mode stick
+
+char1: walk from=170,390 to=790,390 speed=1.05 bounce=0.32 stride=58 step_height=23 cadence=1.7
+char1: wave hand=right cycles=2 amplitude=26 start=0.8 duration=1.6
+
+char2: chase target=char1 offset=-50 aggression=1.35 bounce=0.38 stride=60 step_height=24 cadence=1.9
+char2: anticipation t=1.0 action=sprint intensity=1.0 duration=0.22
+
+duel_collision distance=48 force=1.05 duration=0.2 take_intensity=0.72 cooldown=0.35
+
+wall x=640 width=20 height=160 force=0.95 duration=0.2
+trapdoor x=735 width=112 depth=82 force=0.9 duration=0.24 open_time=0.24
+anvil x=520 size=36 trigger_x=470 trigger_radius=55 delay=0.08 fall_speed=390 force=1.0 duration=0.2

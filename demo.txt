@@ -1,0 +1,18 @@
+# Demo: minimaler "walk-ish" move als Keyframes
+canvas 800 450
+fps 12
+seconds 3.0
+physics mode=off
+camera enabled=true focus=self zoom=1.04 depth=true parallax=0.14 shake_on_impact=false
+character seed "MYCELIA-INK" line 7 limb 10 head 28 jitter 1.1 mode stick
+
+# Pose Format:
+# pose t=<sec> root=x,y lh=x,y rh=x,y lf=x,y rf=x,y look=<deg> squash=<0..1>
+
+pose t=0.0 root=200,330 lh=-70,-120 rh=70,-120 lf=-30,90 rf=30,90
+pose t=0.5 root=260,330 lh=-80,-110 rh=60,-130 lf=-20,90 rf=40,90
+pose t=1.0 root=320,330 lh=-70,-120 rh=70,-120 lf=-30,90 rf=30,90
+pose t=1.5 root=380,330 lh=-60,-130 rh=80,-110 lf=-40,90 rf=20,90
+pose t=2.0 root=440,330 lh=-70,-120 rh=70,-120 lf=-30,90 rf=30,90
+pose t=2.5 root=500,330 lh=-80,-110 rh=60,-130 lf=-20,90 rf=40,90
+pose t=3.0 root=560,330 lh=-70,-120 rh=70,-120 lf=-30,90 rf=30,90

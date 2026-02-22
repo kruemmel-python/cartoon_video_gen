@@ -1,0 +1,76 @@
+{
+  "name": "default_modular_mesh",
+  "parts": [
+    {
+      "id": "torso",
+      "bone": "torso",
+      "z": 10,
+      "svg_file": "parts/torso.svg",
+      "translate": [0, -4],
+      "rest_length": 70,
+      "tint": "#f3f3f3"
+    },
+    {
+      "id": "head",
+      "bone": "head",
+      "z": 20,
+      "svg_file": "parts/head.svg",
+      "translate": [0, -34],
+      "rest_length": 35
+    },
+    {
+      "id": "arm_l",
+      "bone": "arm_l",
+      "z": 15,
+      "svg_file": "parts/arm.svg",
+      "rest_length": 82
+    },
+    {
+      "id": "arm_r",
+      "bone": "arm_r",
+      "z": 15,
+      "svg_file": "parts/arm.svg",
+      "rest_length": 82
+    },
+    {
+      "id": "hand_l",
+      "bone": "hand_l",
+      "z": 16,
+      "svg_file": "parts/hand.svg",
+      "translate": [0, 0]
+    },
+    {
+      "id": "hand_r",
+      "bone": "hand_r",
+      "z": 16,
+      "svg_file": "parts/hand.svg",
+      "translate": [0, 0]
+    },
+    {
+      "id": "leg_l",
+      "bone": "leg_l",
+      "z": 12,
+      "svg_file": "parts/leg.svg",
+      "rest_length": 92
+    },
+    {
+      "id": "leg_r",
+      "bone": "leg_r",
+      "z": 12,
+      "svg_file": "parts/leg.svg",
+      "rest_length": 92
+    },
+    {
+      "id": "foot_l",
+      "bone": "foot_l",
+      "z": 13,
+      "svg_file": "parts/foot.svg"
+    },
+    {
+      "id": "foot_r",
+      "bone": "foot_r",
+      "z": 13,
+      "svg_file": "parts/foot.svg"
+    }
+  ]
+}

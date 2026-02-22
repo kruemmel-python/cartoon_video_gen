@@ -1,0 +1,18 @@
+# Procedural walk-cycle demo
+canvas 800 450
+fps 24
+physics mode=off
+camera enabled=true focus=self zoom=1.08 depth=true parallax=0.22 shake_on_impact=true
+character seed "PROC-WALK-INK" line 7 limb 10 head 28 jitter 1.0 mode mesh mesh "assets/meshes/default/mesh.json" tint "#2f2f2f"
+
+# Optional:
+# seconds 3.2
+
+walk from=200,330 to=600,330 speed=1.0 bounce=0.3 stride=56 step_height=22 cadence=1.6
+wave hand=right cycles=2 amplitude=26 start=1.2 duration=1.3
+wall x=420 width=18 height=140 force=0.9 duration=0.22
+trapdoor x=520 width=90 depth=70 force=0.8 duration=0.24 open_time=0.28
+anvil x=610 size=34 trigger_x=565 trigger_radius=42 delay=0.08 fall_speed=360 force=1.0 duration=0.2
+anticipation t=0.75 action=sprint intensity=0.9 duration=0.25
+impact t=2.05 direction=-1,0 force=0.8 duration=0.24
+take t=2.45 intensity=0.75 hold=2

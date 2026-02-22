@@ -1,0 +1,9 @@
+{
+  "name": "Cartoon DSL Live Editor",
+  "short_name": "CartoonEditor",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f1e3",
+  "theme_color": "#0f766e",
+  "description": "Vector-first cartoon editor with local Pyodide/Wasm preview runtime."
+}
